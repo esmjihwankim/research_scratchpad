@@ -22,8 +22,11 @@
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
 
+#include <stdio.h>
+
 int main(void)
 {
     /* Loop forever */
+	printf("Hello world\n");
 	for(;;);
 }
