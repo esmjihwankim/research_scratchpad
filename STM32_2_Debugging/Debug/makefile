@@ -59,8 +59,8 @@ all: main-build
 main-build: STM32_2_Debugging.elf secondary-outputs
 
 # Tool invocations
-STM32_2_Debugging.elf STM32_2_Debugging.map: $(OBJS) $(USER_OBJS) K:\Nordic_Semi\nRF5_SDK_17.0.2_d674dde\examples\test-embedded-systems\STM32_2_Debugging\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "STM32_2_Debugging.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"K:\Nordic_Semi\nRF5_SDK_17.0.2_d674dde\examples\test-embedded-systems\STM32_2_Debugging\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_2_Debugging.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+STM32_2_Debugging.elf STM32_2_Debugging.map: $(OBJS) $(USER_OBJS) C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\STM32_2_Debugging\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "STM32_2_Debugging.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\STM32_2_Debugging\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_2_Debugging.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
