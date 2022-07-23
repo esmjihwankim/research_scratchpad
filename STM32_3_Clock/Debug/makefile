@@ -60,8 +60,8 @@ all: main-build
 main-build: STM32_3_Clock.elf secondary-outputs
 
 # Tool invocations
-STM32_3_Clock.elf STM32_3_Clock.map: $(OBJS) $(USER_OBJS) C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\STM32_3_Clock\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "STM32_3_Clock.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\STM32_3_Clock\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_3_Clock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+STM32_3_Clock.elf STM32_3_Clock.map: $(OBJS) $(USER_OBJS) K:\Dev_Software\Embedded\Nordic_Semi\nRF5_SDK_17.0.2_d674dde\examples\test-embedded-systems\STM32_3_Clock\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "STM32_3_Clock.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"K:\Dev_Software\Embedded\Nordic_Semi\nRF5_SDK_17.0.2_d674dde\examples\test-embedded-systems\STM32_3_Clock\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_3_Clock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
