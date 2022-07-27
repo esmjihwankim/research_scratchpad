@@ -27,9 +27,8 @@ void twi_init(void)
         .frequency = NRF_DRV_TWI_FREQ_100K,
         .interrupt_priority = APP_IRQ_PRIORITY_LOW, 
         .clear_bus_init = false
-    }; 
-
-
+    };
+    
     // can put interrupt handler in the function 
     err_code = nrf_drv_twi_init(&m_twi, &twi_config, NULL, NULL); 
     APP_ERROR_CHECK(err_code); 
@@ -40,6 +39,28 @@ void twi_init(void)
 
 int main(void)
 {
+    ret_code_t err_code; 
+    uint8_t address = 0x68; 
+    uint8_t sample_data = 0x00; 
+    
+    APP_ERROR_CHECK(NRF_LOG_INIT(NULL)); 
+    NRF_LOG_DEFAULT_BACKENDS_INIT(); 
+
+    NRF_LOG_INFO("Application started");  
+    NRF_LOG_FLUSH();
+
+    twi_init(); 
+
+    err_code = nrf_drv_twi_rx(&m_twi, address, &sample_data, sizeof(sample_data)); 
+    if(err_code == NRF_SUCCESS)
+    {
+        NRF_LOG_INFO("Successfully detected a device at address : 0x%x", address); 
+    }
+    NRF_LOG_FLUSH();
+
+    while(true)
+    {
+    }
     
 }
 
