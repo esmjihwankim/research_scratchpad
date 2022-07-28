@@ -1,7 +1,3 @@
-/*
-ACK signal and some other signals related to I2C communication is 
-handled automatically in the API 
-*/ 
 
 #include <stdio.h>
 #include "boards.h"
@@ -13,9 +9,10 @@ handled automatically in the API
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 
-#define TWI_INSTANCE_ID   0 
+#define TWI_INSTANCE_ID 0
 
 static const nrf_drv_twi_t m_twi = NRF_DRV_TWI_INSTANCE(TWI_INSTANCE_ID); 
+
 
 
 void twi_init(void)
@@ -42,7 +39,7 @@ int main(void)
     ret_code_t err_code; 
     uint8_t address = 0x68; 
     uint8_t sample_data = 0x00; 
-    
+  
     APP_ERROR_CHECK(NRF_LOG_INIT(NULL)); 
     NRF_LOG_DEFAULT_BACKENDS_INIT(); 
 
@@ -61,7 +58,6 @@ int main(void)
     while(true)
     {
     }
-    
 }
 
 /** @} */
