@@ -9,55 +9,44 @@
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 
+#include "i2cdev.h"
+#include "ms5611.h"
+
 #define TWI_INSTANCE_ID 0
 
 static const nrf_drv_twi_t m_twi = NRF_DRV_TWI_INSTANCE(TWI_INSTANCE_ID); 
-
-
-
-void twi_init(void)
-{
-    ret_code_t err_code; 
-    const nrf_drv_twi_config_t twi_config = {
-        .scl = 22,
-        .sda = 23, 
-        .frequency = NRF_DRV_TWI_FREQ_100K,
-        .interrupt_priority = APP_IRQ_PRIORITY_LOW, 
-        .clear_bus_init = false
-    };
-    
-    // can put interrupt handler in the function 
-    err_code = nrf_drv_twi_init(&m_twi, &twi_config, NULL, NULL); 
-    APP_ERROR_CHECK(err_code); 
-    
-    nrf_drv_twi_enable(&m_twi); 
-}
-
+float pressure;           // Pressure 
+float temperature;	 // Temperature 
+float asl;		// Altitude value above sea level
+float asl_current;	
 
 int main(void)
 {
     ret_code_t err_code; 
-    uint8_t address = 0x68; 
-    uint8_t sample_data = 0x00; 
-  
+
     APP_ERROR_CHECK(NRF_LOG_INIT(NULL)); 
-    NRF_LOG_DEFAULT_BACKENDS_INIT(); 
-
-    NRF_LOG_INFO("Application started");  
+    NRF_LOG_DEFAULT_BACKENDS_INIT();
+    NRF_LOG_INFO("Application started"); 
     NRF_LOG_FLUSH();
-
-    twi_init(); 
-
-    err_code = nrf_drv_twi_rx(&m_twi, address, &sample_data, sizeof(sample_data)); 
-    if(err_code == NRF_SUCCESS)
+    
+    i2cdev_initialize();
+    i2cdev_enable(true); 
+    
+    if(ms5611Init() == true)
     {
-        NRF_LOG_INFO("Successfully detected a device at address : 0x%x", address); 
+        NRF_LOG_INFO("MS5611Init Succeeded"); 
+        NRF_LOG_FLUSH();
     }
-    NRF_LOG_FLUSH();
 
-    while(true)
+    int getData[3]; 
+
+    while(true) 
     {
+        
     }
+
+
+
 }
 
 /** @} */

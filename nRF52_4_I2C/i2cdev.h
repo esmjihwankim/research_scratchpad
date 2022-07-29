@@ -52,6 +52,7 @@ THE SOFTWARE.
 #define I2C_SCL_MODE gpioModeWiredAnd
 #define I2C_SCL_DOUT 1
 
+
 #define I2CDEV_DEFAULT_READ_TIMEOUT 0
 
 void i2cdev_initialize(void);

@@ -42,19 +42,19 @@ THE SOFTWARE.
 
 #define I2CDEV_NO_MEM_ADDR  0xFF
 
+#define SCL_PIN 22
+#define SDA_PIN 23
+
 static nrf_drv_twi_t m_twi=NRF_DRV_TWI_INSTANCE(0);
 
-#define SCL_PIN 13
-#define SDA_PIN 12
-
 void i2cdev_initialize(void) {
-	 ret_code_t err_code;
+    ret_code_t err_code;
 
     const nrf_drv_twi_config_t config = {
        .scl                = SCL_PIN,
        .sda                = SDA_PIN,
-       .frequency          = NRF_TWI_FREQ_400K,
-       .interrupt_priority = APP_IRQ_PRIORITY_HIGH
+       .frequency          = NRF_TWI_FREQ_100K,
+       .interrupt_priority = APP_IRQ_PRIORITY_LOWEST
     };
 
     err_code = nrf_drv_twi_init(&m_twi, &config, NULL, NULL);

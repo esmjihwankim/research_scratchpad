@@ -73,13 +73,13 @@ bool ms5611Init(void)
   if (isInit)
     return true;
 
-  devAddr = MS5611_ADDR_CSB_LOW;
+  devAddr = MS5611_ADDR_CSB_HIGH;
 
   ms5611Reset(); // reset the device to populate its internal PROM registers
   nrf_delay_ms(5);
   if (ms5611ReadPROM() == false) // reads the PROM into object variables for later use
   {
-    return false;
+      return false;
   }
 
   isInit = true;
