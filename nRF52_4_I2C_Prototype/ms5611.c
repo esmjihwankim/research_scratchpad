@@ -73,7 +73,7 @@ bool ms5611Init(void)
   if (isInit)
     return true;
 
-  devAddr = MS5611_ADDR_CSB_HIGH;
+  devAddr = MS5611_ADDR_CSB_LOW;
 
   ms5611Reset(); // reset the device to populate its internal PROM registers
   nrf_delay_ms(5);
@@ -322,13 +322,15 @@ bool ms5611ReadPROM()
  */
 void ms5611Reset()
 {
-  i2cdev_writeByte(devAddr, I2CDEV_NO_MEM_ADDR, MS5611_RESET);
+    i2cdev_writeByte(devAddr, I2CDEV_NO_MEM_ADDR, MS5611_RESET);
 }
 
 
 
 static uint8_t baro_loop_counter = 0;
-static int32_t tempPressureRaw; // tempTemperatureRaw;
+static uint8_t temp_loop_counter = 0;
+static int32_t tempPressureRaw;     // temporary pressure value 
+static int32_t tempTemperatureRaw;  // temporary temperature value
 /**
  * Gets pressure, temperature and above sea level altitude estimate (asl).
  * Best called at 100hz. For every PRESSURE_PER_TEMP-1 pressure readings temp is read once.
@@ -336,27 +338,41 @@ static int32_t tempPressureRaw; // tempTemperatureRaw;
  */
 void ms5611GetData(float* pressure, float* temperature, float* asl)
 {
-		/*if(baro_loop_counter % 100 == 0){
-			ms5611StartConversion(MS5611_D2 + MS5611_OSR_4096);
-		  nrf_delay_ms(8);			
-			tempTemperatureRaw = ms5611GetConversion(MS5611_D2 + MS5611_OSR_DEFAULT);
-		*/
-	
-		tempDeltaT 	 = 1;
-		*temperature = 25.0f;
-	
-		//}
-		
-		if((baro_loop_counter ) % 10 == 0)
-			ms5611StartConversion(MS5611_D1 + MS5611_OSR_4096);
-		//nrf_delay_ms(CONVERSION_TIME_MS);
-		if((baro_loop_counter + 5 ) % 10  == 0)
-			tempPressureRaw = ms5611GetConversion(MS5611_D1 + MS5611_OSR_DEFAULT);
-	  
-		*pressure 	 = ms5611CalcPressure(tempPressureRaw, tempDeltaT);
-		*asl 				 = ms5611PressureToAltitude(pressure);	
+
+    tempDeltaT 	 = 1;
+    *temperature = 25.0f;
+
+    /*
+    // temperature 
+    if((temp_loop_counter ) % 100 == 0)
+    {
+          ms5611StartConversion(MS5611_D2 + MS5611_OSR_4096); 
+    }
+    if((temp_loop_counter + 10) % 100 == 0) 
+    { 
+          tempTemperatureRaw = ms5611GetConversion(MS5611_D2 + MS5611_OSR_DEFAULT);
+    }      
+    */
+
+    
+    // pressure
+    if((baro_loop_counter ) % 10 == 0)
+    {
+          ms5611StartConversion(MS5611_D1 + MS5611_OSR_4096);
+    }
+    //nrf_delay_ms(CONVERSION_TIME_MS);
+    if((baro_loop_counter + 5 ) % 10  == 0)
+    {
+          tempPressureRaw = ms5611GetConversion(MS5611_D1 + MS5611_OSR_DEFAULT);
+    }
+
+
+    // *temperature    = ms5611CalcTemp(tempTemperatureRaw);
+    *pressure       = ms5611CalcPressure(tempPressureRaw, tempDeltaT);
+    *asl            = ms5611PressureToAltitude(pressure);	
 
     baro_loop_counter++;	
+    // temp_loop_counter++;
 }
 
 //TODO: pretty expensive function. Rather smooth the pressure estimates and only call this when needed

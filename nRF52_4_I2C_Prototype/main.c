@@ -44,7 +44,8 @@ int main(void)
     while(true) 
     {
         ms5611GetData(&pressure, &temperature, &altitude);
-        NRF_LOG_INFO("PRESSURE:: "NRF_LOG_FLOAT_MARKER" ",  NRF_LOG_FLOAT(pressure)); 
+        //NRF_LOG_INFO("Temperature:: "NRF_LOG_FLOAT_MARKER" ",   NRF_LOG_FLOAT(temperature));
+        NRF_LOG_INFO("Pressure :: "NRF_LOG_FLOAT_MARKER" ",     NRF_LOG_FLOAT(pressure)); 
         NRF_LOG_FLUSH();
     }
 
