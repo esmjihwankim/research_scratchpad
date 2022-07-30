@@ -9,16 +9,19 @@
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 
-#include "i2cdev.h"
 #include "ms5611.h"
+#include "i2cdev.h"
+
+#include "nrf_delay.h"
 
 #define TWI_INSTANCE_ID 0
 
 static const nrf_drv_twi_t m_twi = NRF_DRV_TWI_INSTANCE(TWI_INSTANCE_ID); 
+
 float pressure;           // Pressure 
-float temperature;	 // Temperature 
-float asl;		// Altitude value above sea level
-float asl_current;	
+float temperature;        // Temperature 
+float altitude;           // Altitude value above sea level
+
 
 int main(void)
 {
@@ -38,15 +41,14 @@ int main(void)
         NRF_LOG_FLUSH();
     }
 
-    int getData[3]; 
-
     while(true) 
     {
-        
+        ms5611GetData(&pressure, &temperature, &altitude);
+        NRF_LOG_INFO("PRESSURE:: "NRF_LOG_FLOAT_MARKER" ",  NRF_LOG_FLOAT(pressure)); 
+        NRF_LOG_FLUSH();
     }
 
-
-
+    return 0;
 }
 
 /** @} */

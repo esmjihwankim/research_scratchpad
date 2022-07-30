@@ -81,5 +81,6 @@ Output/Debug/Obj/twi_scanner_pca10040/main.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.30/include/stdlib.h \
  ../../../../../../components/libraries/balloc/nrf_balloc.h \
  ../../../../../../components/libraries/log/nrf_log_default_backends.h \
+ C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_4_I2C\ms5611.h \
  C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_4_I2C\i2cdev.h \
- C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_4_I2C\ms5611.h
+ ../../../../../../components/libraries/delay/nrf_delay.h

@@ -39,11 +39,13 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="34" useTextEdit="1" path="../../../main.c" left="0" top="14" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="3" y="250" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C/main.c" path="../../../i2cdev.c" left="0" top="235" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="45" y="25" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C/main.c" path="../../../ms5611.c" left="0" selected="1" top="6" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="54" useTextEdit="1" path="../../../main.c" left="0" selected="1" top="14" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="51" y="27" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C/main.c" path="../../../i2cdev.c" left="0" top="18" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="70" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C/main.c" path="../../../ms5611.c" left="0" top="60" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="53" useTextEdit="1" path="../../../i2cdev.h" left="0" top="38" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="40" y="108" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C/i2cdev.c" path="../../../../../../integration/nrfx/legacy/nrf_drv_twi.c" left="0" top="46" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="40" y="108" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C/i2cdev.c" path="../../../../../../integration/nrfx/legacy/nrf_drv_twi.c" left="0" top="82" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="32" y="39" useTextEdit="1" path="../../../ms5611.h" left="0" top="39" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="2" y="37" useTextEdit="1" path="../../../../../../integration/nrfx/legacy/nrf_drv_uart.c" left="0" top="24" codecName="Default"/>
  </Files>
  <EMStudioWindow activeProject="twi_scanner_pca10040" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>
