@@ -135,7 +135,8 @@ int8_t i2cdev_readByte(uint8_t devAddr, uint8_t regAddr, uint8_t *data) {
 int8_t i2cdev_readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data) {
 	
 	//Used for MS5611 Pressure sensor
-	if(regAddr != I2CDEV_NO_MEM_ADDR) {
+	if(regAddr != I2CDEV_NO_MEM_ADDR) 
+        {
 		nrf_drv_twi_tx(&m_twi,devAddr,&regAddr,1,true);
 	}
 	

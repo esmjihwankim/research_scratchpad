@@ -1,25 +1,46 @@
 <!DOCTYPE CrossStudio_Session_File>
 <session>
  <Bookmarks/>
- <Breakpoints groups="Breakpoints" active_group="Breakpoints"/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <BreakpointListItem trigger="" line="284" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="../../../ms5611.c" useHWbreakpoint="false"/>
+  <Exceptions set="BusFault;ExceptionEntryReturnFault;HardFault;MemManage;UsageFault_CheckingError;UsageFault_Coprocessor;UsageFault_StateError"/>
+ </Breakpoints>
  <ExecutionProfileWindow/>
  <FrameBufferWindow>
   <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
  </FrameBufferWindow>
- <Memory1/>
- <Memory2/>
- <Memory3/>
- <Memory4/>
+ <Memory1>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="twi_scanner_pca10040" sizeText="" addressText=""/>
+ </Memory1>
+ <Memory2>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="twi_scanner_pca10040" sizeText="" addressText=""/>
+ </Memory2>
+ <Memory3>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="twi_scanner_pca10040" sizeText="" addressText=""/>
+ </Memory3>
+ <Memory4>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="twi_scanner_pca10040" sizeText="" addressText=""/>
+ </Memory4>
  <Project>
   <ProjectSessionItem path="twi_scanner_pca10040"/>
   <ProjectSessionItem path="twi_scanner_pca10040;twi_scanner_pca10040"/>
   <ProjectSessionItem path="twi_scanner_pca10040;twi_scanner_pca10040;Application"/>
   <ProjectSessionItem path="twi_scanner_pca10040;twi_scanner_pca10040;nRF_Drivers"/>
+  <ProjectSessionItem path="twi_scanner_pca10040;twi_scanner_pca10040;nRF_Libraries"/>
+  <ProjectSessionItem path="twi_scanner_pca10040;twi_scanner_pca10040;nRF_Log"/>
  </Project>
- <Register1/>
- <Register2/>
- <Register3/>
- <Register4/>
+ <Register1>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="twi_scanner_pca10040" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register1>
+ <Register2>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="twi_scanner_pca10040" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register2>
+ <Register3>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="twi_scanner_pca10040" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register3>
+ <Register4>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="twi_scanner_pca10040" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register4>
  <Threads>
   <ThreadsWindow showLists=""/>
  </Threads>
@@ -27,7 +48,11 @@
   <Trace enabled="Yes"/>
  </TraceWindow>
  <Watch1>
-  <Watches active="1" update="Never"/>
+  <Watches active="1" update="Never">
+   <Watchpoint expression="ms_ticks" name="ms_ticks" radix="16" linenumber="6" filename="../../../systick.h"/>
+   <Watchpoint expression="buffer" name="buffer" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="conversion" name="conversion" radix="-1" linenumber="0" filename="../ses"/>
+  </Watches>
  </Watch1>
  <Watch2>
   <Watches active="0" update="Never"/>
@@ -39,13 +64,22 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="48" useTextEdit="1" path="../../../main.c" left="0" top="22" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="20" y="227" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C/main.c" path="../../../i2cdev.c" left="0" top="210" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="53" useTextEdit="1" path="../../../i2cdev.h" left="0" top="38" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="40" y="108" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C/i2cdev.c" path="../../../../../../integration/nrfx/legacy/nrf_drv_twi.c" left="0" top="82" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="54" useTextEdit="1" path="../../../ms5611.h" left="0" top="49" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="354" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C/main.c" path="../../../ms5611.c" left="0" selected="1" top="328" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="2" y="37" useTextEdit="1" path="../../../../../../integration/nrfx/legacy/nrf_drv_uart.c" left="0" top="24" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="13" y="53" useTextEdit="1" path="../../../main.c" left="0" selected="1" top="27" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="144" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C_Prototype/ms5611.c" path="../../../i2cdev.c" left="0" top="116" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="38" useTextEdit="1" path="../../../i2cdev.h" left="0" top="28" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="108" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C/i2cdev.c" path="../../../../../../integration/nrfx/legacy/nrf_drv_twi.c" left="0" top="82" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="93" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C_Prototype/ms5611.c" path="../../../ms5611.h" left="0" top="58" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="268" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C_Prototype/main.c" path="../../../ms5611.c" left="0" top="250" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="37" useTextEdit="1" path="../../../../../../integration/nrfx/legacy/nrf_drv_uart.c" left="0" top="24" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="8" useTextEdit="1" openedFrom="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C_Prototype/ms5611.c" path="../../../systick.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../config/sdk_config.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="138" useTextEdit="1" path="../../../../../../components/libraries/log/src/nrf_log_frontend.c" left="0" top="103" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="276" useTextEdit="1" path="../../../../../../components/toolchain/cmsis/include/cmsis_gcc.h" left="0" top="257" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="571" useTextEdit="1" path="../../../../../../integration/nrfx/legacy/nrf_drv_twi.h" left="0" top="553" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="664" useTextEdit="1" path="../../../../../../modules/nrfx/drivers/src/nrfx_twim.c" left="0" top="645" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="309" useTextEdit="1" path="../../../../../../modules/nrfx/drivers/nrfx_common.h" left="0" top="290" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="476" useTextEdit="1" path="../../../../../../modules/nrfx/hal/nrf_twim.h" left="0" top="456" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="66" useTextEdit="1" path="../../../../../../components/libraries/util/app_util_platform.c" left="0" top="48" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="twi_scanner_pca10040" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/examples/test-embedded-systems/nRF52_4_I2C" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <EMStudioWindow activeProject="twi_scanner_pca10040" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

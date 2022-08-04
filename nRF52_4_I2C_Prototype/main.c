@@ -22,7 +22,7 @@ float pressure;           // Pressure
 float temperature;        // Temperature 
 float altitude;           // Altitude value above sea level
 
-
+volatile int ms_ticks = 0; 
 int main(void)
 {
     ret_code_t err_code; 
@@ -43,9 +43,11 @@ int main(void)
 
     while(true) 
     {
-        ms5611GetData(&pressure, &temperature, &altitude);
-        //NRF_LOG_INFO("Temperature:: "NRF_LOG_FLOAT_MARKER" ",   NRF_LOG_FLOAT(temperature));
-        NRF_LOG_INFO("Pressure :: "NRF_LOG_FLOAT_MARKER" ",     NRF_LOG_FLOAT(pressure)); 
+        //TODO: Implement 1ms timer and test all ms5611 functions to test validity
+        temperature = ms5611RawTemperature(MS5611_OSR_4096);
+        
+        NRF_LOG_INFO("Temperature:: "NRF_LOG_FLOAT_MARKER" ",   NRF_LOG_FLOAT(temperature));
+        //NRF_LOG_INFO("Pressure :: "NRF_LOG_FLOAT_MARKER" ",     NRF_LOG_FLOAT(pressure)); 
         NRF_LOG_FLUSH();
     }
 
