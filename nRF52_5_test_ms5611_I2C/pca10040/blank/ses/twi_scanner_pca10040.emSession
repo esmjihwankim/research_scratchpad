@@ -3,7 +3,6 @@
  <Bookmarks/>
  <Breakpoints groups="Breakpoints" active_group="Breakpoints">
   <BreakpointListItem trigger="" line="284" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="../../../ms5611.c" useHWbreakpoint="false"/>
-  <Exceptions set="BusFault;ExceptionEntryReturnFault;HardFault;MemManage;UsageFault_CheckingError;UsageFault_Coprocessor;UsageFault_StateError"/>
  </Breakpoints>
  <ExecutionProfileWindow/>
  <FrameBufferWindow>
@@ -64,7 +63,7 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="24" useTextEdit="1" path="../../../main.c" left="0" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="5" y="95" useTextEdit="1" path="../../../main.c" left="0" selected="1" top="39" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="twi_scanner_pca10040" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/modules/nrfx/drivers/src" debugSearchPath="" autoConnectCapabilities="3199"/>
+ <EMStudioWindow activeProject="twi_scanner_pca10040" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/WonResearchGroup/Desktop/Dev/Embedded/nRF5_SDK_17.1.0/modules/nrfx/drivers/src" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

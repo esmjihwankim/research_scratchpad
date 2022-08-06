@@ -1,5 +1,5 @@
 Output/Debug/Obj/twi_scanner_pca10040/main.o: \
- C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_I2C_Prototype\main.c \
+ C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_test_ms5611_I2C\main.c \
  C:/Users/WonResearchGroup/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/stdio.h \
  C:/Users/WonResearchGroup/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/__config \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.30/include/stdio.h \
@@ -81,6 +81,8 @@ Output/Debug/Obj/twi_scanner_pca10040/main.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.30/include/stdlib.h \
  ../../../../../../components/libraries/balloc/nrf_balloc.h \
  ../../../../../../components/libraries/log/nrf_log_default_backends.h \
- C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_I2C_Prototype\ms5611.h \
- C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_I2C_Prototype\i2cdev.h \
- ../../../../../../components/libraries/delay/nrf_delay.h
+ ../../../../../../integration/nrfx/legacy/nrf_drv_timer.h \
+ ../../../../../../modules/nrfx/drivers/include/nrfx_timer.h \
+ ../../../../../../modules/nrfx/hal/nrf_timer.h \
+ C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_test_ms5611_I2C\ms5611.h \
+ C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_test_ms5611_I2C\i2cdev.h

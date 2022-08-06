@@ -1,10 +1,10 @@
 Output/Debug/Obj/twi_scanner_pca10040/ms5611.o: \
- C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_I2C_Prototype\ms5611.c \
- C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_I2C_Prototype\ms5611.h \
+ C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_test_ms5611_I2C\ms5611.c \
+ C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_test_ms5611_I2C\ms5611.h \
  C:/Users/WonResearchGroup/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/stdbool.h \
  C:/Users/WonResearchGroup/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/__config \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.30/include/stdbool.h \
- C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_I2C_Prototype\i2cdev.h \
+ C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_test_ms5611_I2C\i2cdev.h \
  C:/Users/WonResearchGroup/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.30/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.30/include/__SEGGER_RTL.h \
@@ -42,7 +42,7 @@ Output/Debug/Obj/twi_scanner_pca10040/ms5611.o: \
  C:/Users/WonResearchGroup/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/math.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.30/include/math.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.30/include/__SEGGER_RTL_FP.h \
- C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_I2C_Prototype\systick.h \
+ C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_test_ms5611_I2C\systick.h \
  ../../../../../../components/libraries/delay/nrf_delay.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \

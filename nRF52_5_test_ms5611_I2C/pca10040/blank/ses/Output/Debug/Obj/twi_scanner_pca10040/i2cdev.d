@@ -1,5 +1,5 @@
 Output/Debug/Obj/twi_scanner_pca10040/i2cdev.o: \
- C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_I2C_Prototype\i2cdev.c \
+ C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_test_ms5611_I2C\i2cdev.c \
  ../../../../../../integration/nrfx/legacy/nrf_drv_twi.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
@@ -57,6 +57,6 @@ Output/Debug/Obj/twi_scanner_pca10040/i2cdev.o: \
  ../../../../../../modules/nrfx/drivers/include/nrfx_twi.h \
  ../../../../../../modules/nrfx/hal/nrf_twi.h \
  ../../../../../../components/libraries/util/app_error.h \
- C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_I2C_Prototype\i2cdev.h \
+ C:\Users\WonResearchGroup\Desktop\Dev\Embedded\nRF5_SDK_17.1.0\examples\test-embedded-systems\nRF52_5_test_ms5611_I2C\i2cdev.h \
  C:/Users/WonResearchGroup/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/string.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.30/include/string.h
