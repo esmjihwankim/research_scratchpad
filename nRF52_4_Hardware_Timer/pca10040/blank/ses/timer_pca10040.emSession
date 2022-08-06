@@ -14,7 +14,6 @@
   <ProjectSessionItem path="timer_pca10040"/>
   <ProjectSessionItem path="timer_pca10040;timer_pca10040"/>
   <ProjectSessionItem path="timer_pca10040;timer_pca10040;Application"/>
-  <ProjectSessionItem path="timer_pca10040;timer_pca10040;nRF_Drivers"/>
  </Project>
  <Register1/>
  <Register2/>
@@ -39,8 +38,8 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="8" useTextEdit="1" path="../../../main.c" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="49" useTextEdit="1" path="../config/sdk_config.h" left="0" selected="1" top="30" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="27" useTextEdit="1" path="../../../main.c" left="0" selected="1" top="5" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="49" useTextEdit="1" path="../config/sdk_config.h" left="0" top="81" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="timer_pca10040" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
+ <EMStudioWindow activeProject="timer_pca10040" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>
