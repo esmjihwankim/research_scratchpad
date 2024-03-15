@@ -1,1 +1,3 @@
 *.metadata
+audio_data/
+mnist_data/
