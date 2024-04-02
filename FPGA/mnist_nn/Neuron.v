@@ -1,10 +1,10 @@
 `include "include.v"
 
-module neuron #(parameter layer_number=0, neuron_number=0, num_weight=784, data_width=16, sigmoid_size=5, weight_int_width=1, act_type="relu", bias_file="", weight_file="")(
+module Neuron #(parameter layer_number=0, neuron_number=0, num_weight=784, data_width=16, sigmoid_size=5, weight_int_width=1, act_type="relu", bias_file="", weight_file="")(
     input clk, 
     input rst,
     input [data_width-1:0] myinput, 
-    input my_input_valid,
+    input myinput_valid,
     input weight_valid,
     input bias_valid, 
     input [31:0] weight_value, 
@@ -60,7 +60,7 @@ module neuron #(parameter layer_number=0, neuron_number=0, num_weight=784, data_
     assign mux_valid     = mult_valid;
     assign combo_add     = mul + sum; 
     assign bias_add      = bias + sum;
-    assign ren           = my_input_valid;
+    assign ren           = myinput_valid;
     
     `ifdef pretrained 
         initial
@@ -80,6 +80,21 @@ module neuron #(parameter layer_number=0, neuron_number=0, num_weight=784, data_
             end
         end
     `endif
+
+    always @(posedge clk)
+    begin
+        if(rst|outvalid)
+            r_addr <= 0; 
+        else if(myinput_valid)
+            r_addr <= r_addr + 1; 
+    end
+
+    always @(posedge clk)
+    begin
+        mul <= $signed(myinputd) *$signed(w_out);
+    end
+
+
 
      always @(posedge clk)
      begin
@@ -104,11 +119,13 @@ module neuron #(parameter layer_number=0, neuron_number=0, num_weight=784, data_
         end
         else if(mux_valid)
         begin
+            // when two positive numbers added and result is negative -> something went wrong : overflow
             if(!mul[2*data_width-1] & !sum[2*data_width-1] & combo_add[2*data_width-1])
             begin
                 sum[2*data_width-1]      <= 1'b0;
-                sum[2*data_width-2:0]    <= {2*data_width-1{1'b1}} 
+                sum[2*data_width-2:0]    <= {2*data_width-1{1'b1}};
             end 
+            // add two positive numbers and a negative number results -> something went wrong : underflow
             else if (bias[2*data_width-1] & sum[2*data_width-1] * !bias_add[2*data_width-1])
             begin
                 sum[2*data_width-1]       <= 1'b1;
@@ -136,10 +153,22 @@ module neuron #(parameter layer_number=0, neuron_number=0, num_weight=784, data_
                 sum[2*data_width-2:0] <= {2*data_width-1{1'b0}};
             end
             else 
-                sum <= combo_add
+                sum <= combo_add;
         end
      end
 
+    always @(posedge clk)
+    begin
+        myinputd        <= myinput;
+        weight_valid    <= myinput_valid;
+        mult_valid      <= weight_valid;
+        sig_valid       <= ((r_addr == num_weight) & mux_valid_f) ? 1'b1 : 1'b0;
+        outvalid        <= sig_valid;
+        mux_valid_d     <= mux_valid;
+        mux_valid_f     <= !mux_valid & mux_valid_d; 
+    end 
+
+    // Instantiation of memory for weights
     Weight_Memory #(.num_weight(num_weight), .neuron_number(neuron_number), .layer_number(layer_number), .address_width(address_width), data_width(data_width), .weight_file(weight_file)) WM(
         .clk(clk),
         .wen(wen),
