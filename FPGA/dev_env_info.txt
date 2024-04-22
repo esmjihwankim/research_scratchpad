@@ -1,0 +1,4 @@
+Used Vitis Version: 2020.2
+https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis/archive-vitis.html
+
+There are some tool bugs for the ones released after these version. 
