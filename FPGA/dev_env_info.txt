@@ -2,3 +2,7 @@ Used Vitis Version: 2020.2
 https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis/archive-vitis.html
 
 There are some tool bugs for the ones released after these version. 
+
+
+Zybo-Z7-20 Development Board 
+https://github.com/Xilinx/XilinxBoardStore/tree/2020.2/boards/Digilent/zybo-z7-20/A.0
