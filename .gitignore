@@ -1,4 +1,6 @@
 *.metadata
+.idea/
 audio_data/
 mnist_data/
 dataset/
+ecg_data/
