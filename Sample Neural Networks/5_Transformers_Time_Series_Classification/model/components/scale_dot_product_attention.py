@@ -22,6 +22,6 @@ class ScaleDotProductAttention(nn.Module):
         v = score @ v
 
         if self.details: print('in Scaled Dot Product, v size after matmul:' + str(v.size()))
-        return v.score
+        return v, score
 
 

@@ -6,7 +6,7 @@ from model.components.multi_head_attention import MultiHeadAttention
 from model.components.position_wise_feedforward import PositionwiseFeedForward
 
 
-class EncoderBlock(nn.module):
+class EncoderBlock(nn.Module):
 
     def __init__(self, d_model, ffn_hidden, n_head, drop_prob, details):
         super(EncoderBlock, self).__init__()

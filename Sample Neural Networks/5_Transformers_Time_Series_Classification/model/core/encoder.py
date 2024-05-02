@@ -3,10 +3,18 @@ from torch import nn
 from model.components.positional_encoding import PositionalEncoding
 from model.core.encoder_block import EncoderBlock
 
-class Encoder(nn.Module):
 
-    def __init__(self, d_model, ffn_hidden, n_head,
-                 n_layers, drop_prob, details, device):
+class Encoder(nn.Module):
+    def __init__(self,
+                 d_model,
+                 ffn_hidden,
+                 n_head,
+                 n_layers,
+                 drop_prob,
+                 details,
+                 device):
+
+        super().__init__()
         self.layers = nn.ModuleList([EncoderBlock(d_model=d_model,
                                                   ffn_hidden=ffn_hidden,
                                                   n_head=n_head,
