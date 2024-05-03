@@ -10,8 +10,8 @@ import numpy as np
 
 def cross_entropy_loss(pred, target):
     criterion = nn.CrossEntropyLoss()
-    lossClass = criterion(pred, target)
-    return lossClass
+    loss_class = criterion(pred, target)
+    return loss_class
 
 
 def calc_loss_and_score(pred, target, metrics):
@@ -73,7 +73,7 @@ def train_model(dataloaders, model, optimizer, num_epochs=100):
 
             for inputs, labels in dataloaders[phase]:
                 inputs = inputs.to(device=device, dtype=torch.float)
-                labels = labels.to(device=device, dtype=torch.int)
+                labels = labels.to(device=device, dtype=torch.long)
                 # zero the parameter gradients
                 optimizer.zero_grad()
 
@@ -125,5 +125,5 @@ train_model(dataloaders=dataloaders,
             optimizer=optimizer,
             num_epochs=20)
 
-torch.save(model.state_dict(), 'my_model')
+torch.save(model.state_dict(), 'saved_model')
 
