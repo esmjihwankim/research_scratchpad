@@ -1,0 +1,24 @@
+@startuml
+
+Process_signal: mean_absolute_error()
+Process_signal: optimize_savgol()
+Process_signal: optimize_original_savgol()
+Process_signal: fft()
+
+Show_result: plot_result()
+Show_result: plot_result_with_level_prediction()
+Show_result: save_result()
+
+Conditions: before_exponential_increase(position_vector, d1_data)
+Conditions: voltage_range(position_vector, raw_x_data)
+Conditions: peak_after_rize(position_vector, d1_data)
+Conditions: maximum_yvalue(raw_ydata)
+
+Main :
+
+Main -> Process_signal
+Main -> Show_result
+Main -> Conditions
+
+
+@enduml
